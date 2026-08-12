@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e3e3;
+}
+
+.navbar {
+  background-color: white;
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 20px;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+
+}
+
+nav a {
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s;
+  justify-self: end;
+}
+
+nav a:hover {
+  color: #F8A21B;
+  border-bottom: 2px solid #F8A21B;
+}
+
+.logo {
+  background-color: #fbfbfb;
+}
+
+.logo img {
+
+  margin-left: 10px;
+}
+
+.Banner img {
+  width: 80%;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.middleSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightSide {
+  border: 2px solid rgb(83, 83, 83);
+  height: 40px;
+  margin: auto 0;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.rightSide input {
+  padding: 7px;
+  width: 300px;
+  font-style: oblique;
+}
+
+.rightSide i {
+  margin-right: 5px;
+  color:  rgb(83, 83, 83);;
+}
+
+.rightSide:hover {
+  color: #F8A21B;
+  border: 2px solid #F8A21B;
+  outline: none;
+}
+
+.rightSide input:hover {
+  color: #F8A21B;
+  outline: none;
+}
+
+
+.rightSide input:focus {
+  border: none;
+  outline: none;
+color: #F8A21B;
+}
+
+
+
+.cardParent {
+  border: 2px solid #F8A21B;
+  background-color: #F8A21B;
+  height: 440px;
+  width: 320px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.cardImg {
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 10px auto 0;
+}
+
+.cardImg img {
+  width: 90%;
+  margin: 0px auto;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.cardImg img:hover {
+  transform: scale(1.06);
+}
+
+.productContainer {
+  flex-wrap: wrap;
+}
+
+.cardHead {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+.cardFoot button {
+  margin-top: 10px;
+  border: 2px solid black;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.cardFoot button:hover {
+  cursor: pointer;
+}
+
+.cardHead,
+.cardBody,
+.cardFoot {
+  margin-left: 15px;
+}
+
+
+.cardFoot .icon {
+  border: 2px solid black;
+  border-radius: 60%;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.cardFoot i {
+  color: rgb(0, 0, 0);
+  margin-left: 8px;
+  margin-top: 10px;
+}
+
+.cardFoot .icon:hover {
+  cursor: pointer;
+}
+
+.footerSec {
+  margin-top: 20px;
+  height: 250px;
+  background-color: #040404;
+}
+
+.footerSec img {
+  margin-left: 20px;
+}
+
+.footerSec p:hover,
+.footerSec h1:hover,
+.footerSec i:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.footerText {
+  color: rgb(203, 196, 196);
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.footerSec img {
+  height: auto;
+}
+
+.leftBar,
+.middleBar,
+.rightBar {
+  align-self: center;
+}
+
+.middleBar,
+.rightBar {
+  color: #e5e3e3;
+}
+
+.socialMedia i {
+  color: white;
+}
+
+.companyDetails p,
+.companyPolicies p {
+  margin-top: 10px;
+}
