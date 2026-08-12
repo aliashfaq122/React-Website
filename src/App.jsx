@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './assets/logoimg.png'
+import logo from './assets/logoImg.png'
 import heroImg from './assets/hero-banner.jpg'
 import { Card } from './components/card'
 import bottomLogo from './assets/logo-bottom.png'
