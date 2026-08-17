@@ -1,7 +1,13 @@
+@import "tailwindcss";
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.timerInterval {
+  margin-bottom: 1100px;
 }
 
 body {
@@ -73,7 +79,8 @@ nav a:hover {
 
 .rightSide i {
   margin-right: 5px;
-  color:  rgb(83, 83, 83);;
+  color: rgb(83, 83, 83);
+  ;
 }
 
 .rightSide:hover {
@@ -91,7 +98,8 @@ nav a:hover {
 .rightSide input:focus {
   border: none;
   outline: none;
-color: #F8A21B;
+  color: #F8A21B;
+
 }
 
 
@@ -109,6 +117,7 @@ color: #F8A21B;
   overflow: hidden;
   border-radius: 10px;
   margin: 10px auto 0;
+  position: relative;
 }
 
 .cardImg img {
@@ -118,7 +127,89 @@ color: #F8A21B;
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
+
 }
+
+
+
+.cardImg {
+  position: relative;
+}
+
+.cartConfig,
+.icon {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+
+  display: flex;
+  align-items: center;
+
+  height: 35px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+
+  overflow: hidden;
+  z-index: 5;
+}
+
+.cartConfig i {
+  font-size: 13px;
+}
+
+.icon i {
+  margin-bottom: 10px;
+}
+
+.icon:hover {
+  background-color: #F8A21B;
+}
+
+.addIcon,
+.removeIcon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.removeIcon {
+  text-align: center;
+
+}
+
+.itemCount {
+  min-width: 25px;
+  text-align: center;
+  padding: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: beige;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.addIcon:hover {
+  background-color: #F8A21B;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  height: 32px;
+}
+
+.removeIcon:hover {
+  background-color: #F8A21B;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  height: 40px;
+}
+
+
 
 .cardImg img:hover {
   transform: scale(1.06);
@@ -154,23 +245,27 @@ color: #F8A21B;
 }
 
 
-.cardFoot .icon {
+.icon {
   border: 2px solid black;
   border-radius: 60%;
   width: 40px;
   height: 40px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-right: 15px;
 }
 
-.cardFoot i {
+.icon i {
   color: rgb(0, 0, 0);
   margin-left: 8px;
   margin-top: 10px;
 }
 
-.cardFoot .icon:hover {
+.icon:hover {
   cursor: pointer;
+}
+
+.cardFoot button {
+  margin-top: 20px;
 }
 
 .footerSec {
@@ -220,4 +315,32 @@ color: #F8A21B;
 .companyDetails p,
 .companyPolicies p {
   margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.cartToast {
+  width: 390px !important;
+  min-height: 65px !important;
+  background: #12c486 !important;
+  color: white !important;
+  border-radius: 15px !important;
+  padding: 12px 25px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+.cartRemove {
+  width: 390px !important;
+  min-height: 65px !important;
+  background:  #ff6b6b !important;
+  color: white !important;
+  border-radius: 15px !important;
+  padding: 12px 25px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
 }

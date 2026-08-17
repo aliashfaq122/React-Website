@@ -3,6 +3,7 @@ import logo from './assets/logoImg.png'
 import heroImg from './assets/hero-banner.jpg'
 import { Card } from './components/card'
 import bottomLogo from './assets/logo-bottom.png'
+import { cartAdd } from './components/cartAdd'
 
 const App = () => {
   let foods = [{
@@ -164,7 +165,7 @@ const App = () => {
         </div>
         <div className="rightSide ">
           <input type="text" placeholder='Search For Your Favorite Food ' />
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i className="fa-solid fa-magnifying-glass"></i>
           
         </div>
 
@@ -199,10 +200,10 @@ const App = () => {
             <p className='font-bold '>Our SocialMedia</p>
           </div>
           <div className="socialMedia flex justify-evenly">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-whatsapp"></i>
+            <i className="fa-brands fa-facebook"></i>
+            <i className="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-twitter"></i>
+            <i className="fa-brands fa-whatsapp"></i>
 
           </div>
         </div>
@@ -218,9 +219,9 @@ const App = () => {
         <div className="rightBar">
           <div className="companyDetails">
             <h1>Contact Us</h1>
-            <p><i class="fa-solid fa-phone"></i> +92 330-8786-747-7</p>
-            <p><i class="fa-regular fa-envelope"></i> muhammedaliashfaq@gmail.com</p>
-            <p><i class="fa-solid fa-location-dot"></i> Plot 12-C, Lane 5,<br /> Shahrah-e-Iran Clifton, Block 4, Karachi, 75600</p>
+            <p><i className="fa-solid fa-phone"></i> +92 330-8786-747-7</p>
+            <p><i className="fa-regular fa-envelope"></i> muhammedaliashfaq@gmail.com</p>
+            <p><i className="fa-solid fa-location-dot"></i> Plot 12-C, Lane 5,<br /> Shahrah-e-Iran Clifton, Block 4, Karachi, 75600</p>
           </div>
         </div>
       </div>
